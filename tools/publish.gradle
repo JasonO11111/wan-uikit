@@ -1,0 +1,40 @@
+apply plugin: 'maven-publish'
+
+def GROUP_ID = "com.gcu.uikit"
+def ARTIFACT_ID = "uikit"
+def VERSION = "1.0.0"
+
+// 上传源码的 task
+task sourceJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    archiveClassifier = "source"
+}
+
+afterEvaluate {
+
+    publishing {
+        // 配置maven 仓库
+        repositories { RepositoryHandler handler ->
+            handler.mavenLocal()
+            handler.maven {
+                url "${rootDir}/local_repo/"
+            }
+        }
+        publications { PublicationContainer publicationContainer ->
+            debug(MavenPublication) {
+                from components.debug
+                artifact sourceJar // 上传源码
+                groupId = GROUP_ID
+                artifactId = ARTIFACT_ID
+                version = "${VERSION}_DEBUG"
+            }
+            release(MavenPublication) {
+                from components.release
+                artifact sourceJar // 上传源码
+                groupId = GROUP_ID
+                artifactId = ARTIFACT_ID
+                version = VERSION
+            }
+        }
+    }
+}

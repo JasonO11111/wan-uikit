@@ -1,0 +1,124 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.gcu.uikit",
+    "module": "uikit",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.0-Beta"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "uikit-1.0.0.aar",
+          "url": "uikit-1.0.0.aar",
+          "size": 1563,
+          "sha512": "abf0bc10ee07820ce9f0f157d7374ed3e28d6219dd722e6c3078ec62f3c684f589d5fa44e2e5d1755ea611823d44b01e298a824612cbdf4b1bef0d613f2bef6e",
+          "sha256": "df65a3219b7e8b3aa82a43ad68b7665778d57d610557a323648e4a21ca282054",
+          "sha1": "5943e327035efe5a7a96b2830ee4a1a722bcf7dd",
+          "md5": "47c27a8f0ad70f7a4fb45a91aaf445d0"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "+"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.0-Beta"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "uikit-1.0.0.aar",
+          "url": "uikit-1.0.0.aar",
+          "size": 1563,
+          "sha512": "abf0bc10ee07820ce9f0f157d7374ed3e28d6219dd722e6c3078ec62f3c684f589d5fa44e2e5d1755ea611823d44b01e298a824612cbdf4b1bef0d613f2bef6e",
+          "sha256": "df65a3219b7e8b3aa82a43ad68b7665778d57d610557a323648e4a21ca282054",
+          "sha1": "5943e327035efe5a7a96b2830ee4a1a722bcf7dd",
+          "md5": "47c27a8f0ad70f7a4fb45a91aaf445d0"
+        }
+      ]
+    },
+    {
+      "name": "releaseSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "files": [
+        {
+          "name": "uikit-1.0.0-sources.jar",
+          "url": "uikit-1.0.0-sources.jar",
+          "size": 1177,
+          "sha512": "a3e282dccc6f9505fcca836254111a8f75576ba69662af1685927b61fab05dbb76a5f80274ba406cd9a139111f38c809d39e4991b6dc5bbedcb194a94cf5f56d",
+          "sha256": "daed6399bd72acaec0eba043a92b5907cddba8238ea803e91289d7ce55759338",
+          "sha1": "b0e2709d8d29097f565f96c71d2831160ca68eca",
+          "md5": "47746787bd8e6917ca7de92528c1108d"
+        }
+      ]
+    }
+  ]
+}
